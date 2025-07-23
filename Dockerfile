@@ -11,7 +11,7 @@ WORKDIR /app
 COPY . /app
 
 # Install dependencies
-RUN pip install --no-cache-dir flask gunicorn
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose the port
 EXPOSE 5001
